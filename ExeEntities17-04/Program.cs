@@ -50,18 +50,7 @@ namespace ExeEntities17_04
                
             }
             
-            Console.WriteLine("\n\nOrder Summary");
-            Console.WriteLine("Order moment: " + order.Momment.ToString("dd/MM/yyyy HH:mm:ss"));
-            Console.WriteLine("Order status:" + order.Status);
-            Console.WriteLine("Client: " + order.Clients.Name + " " + order.Clients.BirthDate.ToString("dd/MM/yyyy") + " - " + order.Clients.Email);
-            Console.WriteLine("Order items: ");
-            foreach (OrderItem list in order.Items)
-            {
-                Console.WriteLine(list.Products.Name + ", $" + list.Price + ", Quantity: " + list.Quantity + ", SubTotal: " + list.SubTotal());
-            }
-
-            Console.WriteLine("Total price: $" + order.Total());
-            
+            Console.Write(order.ToString());
 
             
             Console.ReadLine();

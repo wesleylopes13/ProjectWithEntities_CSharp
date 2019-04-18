@@ -51,7 +51,7 @@ namespace ExeEntities17_04.Entities
             sb.AppendLine("\n\nOrder Summary: ");
             sb.AppendLine("Order moment: " + Momment.ToString("dd/MM/yyyy HH:mm:ss"));
             sb.AppendLine("Order status: " + Status);
-            sb.AppendFormat("Client: " + Clients.Name + " " + Clients.BirthDate.ToString("dd/MM/yyyy" + " - " + Clients.Email.ToString()));
+            sb.AppendFormat("Client: " + Clients.Name + " " + Clients.BirthDate.ToString("dd/MM/yyyy") + " - " + Clients.Email);
             sb.AppendLine("\nOrder items:");
 
             foreach (OrderItem list in Items)
